@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # input
     file = 'geological-model.ifc'
     ifc_element_type = 'IFCBUILDINGELEMENTPROXY'
-    file_excel = 'Merkmale_geological-model.xlsx'
+    file_excel = 'Merkmale_IFC_addPSETS.xlsx'
     excel_sheet = ['Pset_A','Pset_B']
 
     path = str(Path().absolute())+'\\'
