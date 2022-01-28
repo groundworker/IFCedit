@@ -40,7 +40,7 @@ def addIFCProp(n_new, file_out, path, file_excel, excel_sheet):
         check_excel = True
     except:
         print('Excel-Datei ('+str(file_excel)+') oder Excel-Tabelle ('+str(excel_sheet)+') nicht vorhanden')
-    if check_excel == True:
+    if check_excel:
         try:
             for index, name in enumerate(df['Name']):
                 print(str(name)+' - wird gesucht')
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # input
     file = 'geological-model.ifc'
     ifc_element_type = 'IFCBUILDINGELEMENTPROXY'
-    file_excel = 'Merkmale_IFC_addPSETS.xlsx'
+    file_excel = 'Merkmale_geological-model.xlsx'
     excel_sheet = ['Pset_A','Pset_B']
 
     path = str(Path().absolute())+'\\'
